@@ -1,30 +1,30 @@
-#+TITLE: slurp layer
+#+TITLE: SLURP your buffers/files into each other!
 
-# The maximum height of the logo should be 200 pixels.
-[[img/slurp.png]]
+[[slurp.png]]
 
-# TOC links should be GitHub style anchors.
 * Table of Contents                                        :TOC_4_gh:noexport:
 - [[#description][Description]]
-- [[#install][Install]]
 - [[#key-bindings][Key bindings]]
+- [[#install][Install]]
 
 * Description
-This layer does wonderful things:
-  - thing01
+To slurp is the quest of many an Emacser. While vim has the =:r= and =:r!=,
+emacs has other slurping tools, allowing for prepending, appending, inserting, and copying =buffers= too!
+
+* Key bindings
+
+=SPC i[nsert] b[uffer]= is the intended mnemonic.
+
+| Key Binding | Description                             |
+|-------------+-----------------------------------------|
+| ~SPC i b <~ | prepend-to-buffer                       |
+| ~SPC i b >~ | append-to-buffer                        |
+| ~SPC i b i~ | insert-[another buffer into this]buffer |
+| ~SPC i b c~ | copy-buffer                             |
+| ~SPC i b f~ | amend-to-file                           |
+
 
 * Install
 To use this configuration layer, add it to your =~/.spacemacs=. You will need to
 add =slurp= to the existing =dotspacemacs-configuration-layers= list in this
 file.
-
-* Key bindings
-
-| Key Binding | Description    |
-|-------------+----------------|
-| ~SPC x x x~ | Does thing01   |
-# Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
-# Examples:
-# [[https://github.com/syl20bnr/spacemacs/blob/master/doc/VIMUSERS.org#sessions]]
-# [[https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Bfun/emoji/README.org][Link to Emoji layer README.org]]
-# If space-doc-mode is enabled, Spacemacs will open a local copy of the linked file.
